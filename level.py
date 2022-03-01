@@ -4,11 +4,11 @@ lev_1_easy = [
     "xxxxxxxxxx",
     "xp   xx xx",
     "x     xxxx",
-    "x        x",
-    "x      x x",
-    "x   x    x",
-    "x      x x",
-    "x  x     x",
+    "x       xx",
+    "x      xxx",
+    "x   x   xx",
+    "x      xxx",
+    "x  x    xx",
     "xx      ex",
     "xxxxxxxxxx"
 ]
@@ -43,12 +43,12 @@ lev_2_easy = [
     "xxxxxxxxxxxxxxxxxxxx",
     "xp xx             xx",
     "x               xxxx",
-    "xx    xx         xx",
-    "x x               x",
-    "xx               xx",
-    "xx              xxx",
-    "xxx     xx        x",
-    "xx         x      x",
+    "xx    xx         xxx",
+    "x x               xx",
+    "xx               xxx",
+    "xx              xxxx",
+    "xxx     xx        xx",
+    "xx         x      xx",
     "xx              xxxx",
     "xx               xxx",
     "xxx             x xx",
@@ -172,7 +172,7 @@ lev_3_medium = [
     "xx   x  x xxxx    xxx    x  xx",
     "xxx  x  xx            xxxxxxxx",
     "xxxx     xxxxxxxxxx         ex",
-    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 ]
 
 lev_3_hard = [
