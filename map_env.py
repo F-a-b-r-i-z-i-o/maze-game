@@ -13,11 +13,11 @@ actions_id = ["UP", "DOWN", "LEFT", "RIGHT"]
 states = {"empty": 0, "wall": 1, "agent": 2, "entry": 3, "exit": 4}
 
 state = {
-    "empty": "  ",
-    "wall": " x ",
-    "agent": " p ",
-    "entry": " E ",
-    "exit": " U ",
+    "empty": " ",
+    "wall": "x",
+    "agent": "p",
+    "entry": "e",
+    "exit": "u",
 }
 
 
