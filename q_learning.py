@@ -102,7 +102,9 @@ class QLearning(object):
             print("")
 
             if done:
+                print("")
                 print("The Agent has reached the exit")
+                input("")
 
     def training(
         self, epochs=25000, steps=200, alpha=0.1, gamma=1.0, eps=1.0, plot=True
