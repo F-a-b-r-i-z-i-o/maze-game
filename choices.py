@@ -3,7 +3,7 @@ import sys
 from map_env import LabyrinthEnv
 from game import Game
 from q_learning import QLearning
-from level import *
+import level
 
 
 def main_menu():
@@ -54,19 +54,19 @@ def lev1_menu():
 
     if wall_input == "1":
         max_actions = int(input("\tMax actions:\n"))
-        game = Game(lev_1_easy, 'x', 'p', 'e')
+        game = Game(level.lev_1_easy, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=10, map_w=10)
 
     elif wall_input == "2":
         max_actions = int(input("\tMax actions:\n"))
-        game = Game(lev_1_medium, 'x', 'p', 'e')
+        game = Game(level.lev_1_medium, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=10, map_w=10)
 
     elif wall_input == "3":
         max_actions = int(input("\tMax actions:\n"))
-        game = Game(lev_1_hard, 'x', 'p', 'e')
+        game = Game(level.lev_1_hard, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=10, map_w=10)
     else:
@@ -114,19 +114,19 @@ def lev2_menu():
 
     if wall_input == "1":
         max_actions = int(input("\tMax actions:\n"))
-        game = Game(lev_2_easy, 'x', 'p', 'e')
+        game = Game(level.lev_2_easy, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=20, map_w=20)
 
     elif wall_input == "2":
         max_actions = int(input("\tMax actions:\n"))
-        game = Game(lev_2_medium, 'x', 'p', 'e')
+        game = Game(level.lev_2_medium, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=20, map_w=20)
 
     elif wall_input == "3":
         max_actions = int(input("\tMax actions:\n"))
-        game = Game(lev_2_hard, 'x', 'p', 'e')
+        game = Game(level.lev_2_hard, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=20, map_w=20)
 
@@ -175,19 +175,19 @@ def lev3_menu():
 
     if wall_input == "1":
         max_actions = int(input("\tMax actions: "))
-        game = Game(lev_3_easy, 'x', 'p', 'e')
+        game = Game(level.lev_3_easy, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=30, map_w=30)
 
     elif wall_input == "2":
         max_actions = int(input("\tMax actions: "))
-        game = Game(lev_3_medium, 'x', 'p', 'e')
+        game = Game(level.lev_3_medium, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=30, map_w=30)
 
     elif wall_input == "3":
         max_actions = int(input("\tMax actions: "))
-        game = Game(lev_3_hard, 'x', 'p', 'e')
+        game = Game(level.lev_3_hard, 'x', 'p', 'e')
         game.create_game()
         env = LabyrinthEnv(max_actions, game=game, map_h=30, map_w=30)
 

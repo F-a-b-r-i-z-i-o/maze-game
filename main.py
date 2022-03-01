@@ -1,4 +1,4 @@
-import choices
+from choices import *
 
 
 if __name__ == "__main__":
@@ -24,6 +24,7 @@ if __name__ == "__main__":
         "\N{brick}"
 
     )
+
     print("")
 
     print("Labyrinth Agent")
@@ -51,4 +52,4 @@ if __name__ == "__main__":
         "\N{brick}"
     )
 
-    choices.main_menu()
+    main_menu()
