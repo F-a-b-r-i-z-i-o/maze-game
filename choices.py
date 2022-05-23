@@ -5,6 +5,8 @@ from game import Game
 from q_learning import QLearning
 import level
 
+# Main menu of the game
+
 
 def main_menu():
     choice = '0'
@@ -40,6 +42,8 @@ def main_menu():
             sys.exit()
         else:
             print("I don't understand your choice.")
+
+# Menu of the first level of the game
 
 
 def lev1_menu():
@@ -85,9 +89,11 @@ def lev1_menu():
     )
     utils.clear_screen()
 
+    # menu of select the possible action to do
+
     if menu_input == "1":
         print("\tTraining\n")
-        QL.training(epochs=20000, steps=200, alpha=0.1,
+        QL.training(epochs=20000, steps=100, alpha=0.1,
                     gamma=1.0, eps=1.0, plot=True)
 
     elif menu_input == "2":
@@ -100,6 +106,8 @@ def lev1_menu():
 
     else:
         print("End\n")
+
+# Menu of the second level of the game
 
 
 def lev2_menu():
@@ -146,9 +154,11 @@ def lev2_menu():
     )
     utils.clear_screen()
 
+    # menu of select the possible action to do
+
     if menu_input == "1":
         print("\tTraining\n")
-        QL.training(epochs=20000, steps=200, alpha=0.1,
+        QL.training(epochs=20000, steps=100, alpha=0.1,
                     gamma=1.0, eps=1.0, plot=True)
 
     elif menu_input == "2":
@@ -161,6 +171,8 @@ def lev2_menu():
 
     else:
         print("\tEnd\n")
+
+# Menu of the third level of the game
 
 
 def lev3_menu():
@@ -199,6 +211,9 @@ def lev3_menu():
     utils.clear_screen()
 
     env.render()
+
+    # menu of select the possible action to do
+
     menu_input = input(
         "(1)\tTraining\n"
         "(2)\tExecute automatically\n"
@@ -209,7 +224,7 @@ def lev3_menu():
 
     if menu_input == "1":
         print("Training\n")
-        QL.training(epochs=20000, steps=200, alpha=0.1,
+        QL.training(epochs=50000, steps=500, alpha=0.1,
                     gamma=1.0, eps=1.0, plot=True)
 
     elif menu_input == "2":

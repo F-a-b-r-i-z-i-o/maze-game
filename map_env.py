@@ -1,10 +1,6 @@
-from __future__ import print_function
-
 import gym
 from gym import spaces
 import numpy as np
-from game import Game
-
 
 possible_actions = {"U": 0, "D": 1, "L": 2, "R": 3}
 
@@ -24,17 +20,17 @@ state = {
 class LabyrinthEnv(gym.Env):
     def __init__(self, max_actions, game=None, map_h=0, map_w=0, load=False):
         """
-        Initialized the maze environment
+            map initialization
             map_h (int) height of the maze
             map_w (int) width of the maze
-            max_actions (int) max number of actions the agent can make
+            max_actions (int) max number of actions 
         """
         super(LabyrinthEnv, self).__init__()
 
         if load:
             self.load_labyrinth()
         else:
-            self.labyrinth_size = {
+            self.map_size = {
                 "h": map_h,
                 "w": map_w,
             }
@@ -85,13 +81,17 @@ class LabyrinthEnv(gym.Env):
         Loads the labyrinth from a file
         """
         self.labyrinth = np.loadtxt("labyrinth", delimiter=" ", dtype=int)
-        self.labyrinth_size = {
+        self.map_size = {
             "h": len(self.labyrinth), "w": len(self.labyrinth[0])}
-        print(self.labyrinth_size)
+        print(self.map_size)
 
     def render(self, mode="human"):
-        labyrinth_h = self.labyrinth_size["h"]
-        labyrinth_w = self.labyrinth_size["w"]
+        """
+        Defines 'obstacles' in the maze and the entry exit and agent
+        """
+
+        labyrinth_h = self.map_size["h"]
+        labyrinth_w = self.map_size["w"]
 
         labyrinth_with_info = self.labyrinth.copy()
         labyrinth_with_info[1][1] = 3  # entry
@@ -116,6 +116,10 @@ class LabyrinthEnv(gym.Env):
             print("")
 
     def reset(self):
+        """
+        Return the agent in the initial position
+        """
+
         self.agent_position = {"x": 1, "y": 1}
         _, observation = self.next_observation()
         return observation
@@ -128,6 +132,10 @@ class LabyrinthEnv(gym.Env):
         return int("".join(map(str, state)), 2)
 
     def next_observation(self, action=None):
+        """
+        Controls the agent's possible actions with the enviroment
+        """
+
         agent_x = self.agent_position["x"]
         agent_y = self.agent_position["y"]
         bumped_wall = False
@@ -155,12 +163,16 @@ class LabyrinthEnv(gym.Env):
         self.agent_position["x"] = agent_x
         self.agent_position["y"] = agent_y
 
+        """
+        if the agent wants to move to a free position
+        it moves it and calculates the next observation in the form of integer
+        """
+
         state = [
             self.labyrinth[agent_y - 1][agent_x - 1],  # 0
             self.labyrinth[agent_y - 1][agent_x],  # 1
             self.labyrinth[agent_y - 1][agent_x + 1],  # 2
             self.labyrinth[agent_y][agent_x - 1],  # 3
-            # A, the agent is here
             self.labyrinth[agent_y][agent_x + 1],  # 4
             self.labyrinth[agent_y + 1][agent_x - 1],  # 5
             self.labyrinth[agent_y + 1][agent_x],  # 6
@@ -170,6 +182,9 @@ class LabyrinthEnv(gym.Env):
         return bumped_wall, self.state_to_int(state)
 
     def step(self, action: int, draw=False):
+        """
+        Function to move the agent in the map
+        """
 
         if draw:
             if action == possible_actions["U"]:  # 0
@@ -189,8 +204,8 @@ class LabyrinthEnv(gym.Env):
             reward = -5
 
         if (
-            self.agent_position["x"] == self.labyrinth_size["w"] - 2
-            and self.agent_position["y"] == self.labyrinth_size["h"] - 2
+            self.agent_position["x"] == self.map_size["w"] - 2
+            and self.agent_position["y"] == self.map_size["h"] - 2
         ):
             done = True
             reward = 10
@@ -202,9 +217,15 @@ class LabyrinthEnv(gym.Env):
         return observation, reward, done, {}
 
     def generate_labyrinth(self, game=None):
+        """
+        Function that generate the labyrint
+        """
 
         if game is not None:
             return game.get_labyrinth()
 
     def action_space_sample(self):
+        """
+        Function to random move the agent
+        """
         return np.random.choice(self.possible_actions)

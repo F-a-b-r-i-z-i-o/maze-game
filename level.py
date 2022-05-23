@@ -1,4 +1,4 @@
-
+# POSSIBLE MAP CONFIGURATION
 
 lev_1_easy = [
     "xxxxxxxxxx",
