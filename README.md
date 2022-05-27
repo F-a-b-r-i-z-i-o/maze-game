@@ -2,6 +2,42 @@
 
 <hr>
 
+- [Installation](#installation)
+
+- [Project Description](#Project-Description)
+
+  - [Goal](#goal)
+  - [Environment](#environment)
+  - [Agent]
+  - [State]
+  - [Reward]
+  - [Stop_Condition](#stop-condition)
+
+- [Implementation](#implementation)
+
+- [Project_Structure](#file-description)
+
+  - [main.py](#mainpy)
+  - [choices.py](#choicespy)
+  - [game.py](#gamepy)
+  - [map_env.py](#mapenvpy)
+  - [level.py](#levelpy)
+  - [q_learning.py](#qlearningpy)
+  - [Images](#images)
+
+- [Project_Display](#project-display)
+
+  - [Terminal](#terminal)
+  - [Graphics](#graphics)
+
+- [Conclusion](#conclusions)
+
+<hr>
+
+<br>
+
+<hr>
+
 ## Installation
 
 Dependencies described in the requirements.txt file were used for the project.
@@ -25,8 +61,6 @@ To start project:
 ## Project Description
 
 Design and implementation of a reinforcement learning environment, for training an agent using a Q-Learning algorithm in the framework of AI-Gym.
-
-<hr>
 
 <br>
 
@@ -88,7 +122,7 @@ The system have:
 
 ## File Description
 
-- **main.py**
+- ### main.py
 
 <br>
 
@@ -96,7 +130,7 @@ Inside the file we have emoticons for a small graphical "entry" of the project p
 
 <br>
 
-- **choices.py**
+- ### choices.py
 
 <br>
 
@@ -104,7 +138,7 @@ Inside this file we have a series of selectable menus each of which will lead th
 
 <br>
 
-- **game.py**
+- ### game.py
 
 <br>
  
@@ -112,7 +146,7 @@ Within game.py are a variety of classes that are used to "disegnate" graphically
 
 <br>
 
-- **map_env.py**
+- ### map_env.py
 
 <br>
 
@@ -120,7 +154,7 @@ Within the map_env.py we have a representation of the map and all locations of b
 
 <br>
 
-- **level.py**
+- ### level.py
 
 <br>
 
@@ -150,7 +184,7 @@ there are also 3 wall options for every map:
 
 <br>
 
-- **q_learning.py**
+- ### q_learning.py
 
 <br>
 
@@ -158,15 +192,11 @@ It has the task of managing the Q matrix: saving it to appropriate file and load
 
 <br>
 
-- **Images**
+- ### Images
 
 <br>
 
 The images folder contains the sprites that are used for the movement of the character in the graphics part.
-
-<hr>
-
-<br>
 
 <hr>
 
