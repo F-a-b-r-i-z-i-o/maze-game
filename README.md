@@ -1,5 +1,11 @@
 # Maze-game
 
+<br>
+
+Q-learning project where an agent learns by himself to find the exit inside a maze. The project is implemented as a level-based game.
+
+<br>
+
 <hr>
 
 - [Installation](#installation)
@@ -8,9 +14,9 @@
 
   - [Goal](#goal)
   - [Environment](#environment)
-  - [Agent]
-  - [State]
-  - [Reward]
+  - [Agent](#agent)
+  - [State](#state)
+  - [Reward](#reward)
   - [Stop_Condition](#stop-condition)
 
 - [Implementation](#implementation)
@@ -93,11 +99,11 @@ Each movement action has a reward of -1, bumping toward a wall has a reward of -
 
 the agent reach the exit cell or maxK actions are executed.
 
+<br>
+
 <hr>
 
 ## Implementation
-
-<hr>
 
 The implementation of the environment have:
 
