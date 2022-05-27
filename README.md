@@ -8,6 +8,8 @@ Dependencies described in the requirements.txt file were used for the project.
 
 It is advisable to install everything on a **virtual environment**.
 
+After installing the dependencies you can start the project with the command
+
 <br>
 
 To start project:
@@ -15,8 +17,6 @@ To start project:
 <br>
 
 `python3 main.py`
-
-<hr>
 
 <br>
 
