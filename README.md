@@ -136,7 +136,10 @@ This mode shows the matrix in the terminal. The elements that make up this type 
 
 <br>
 
-![grafica-t](./screen-project/grafica-t.png)
+<p align="center">
+  <img src="./screen-project/grafica-t.png" alt="Graphics Representation">
+</p>
+
 
 <br>
 
@@ -153,7 +156,7 @@ This type of implementation is shown on the screen a turtle window with inside a
 <br>
 
 <p align="center">
-  <img src="./images/entry1.gif" alt="Entry of the Labyrinth">
+  <img src="./images/entry1.gif" alt="Entry of the Labyrinth" width="50%">
 </p>
 
 It represents entry of the labyrinth.
@@ -161,7 +164,7 @@ It represents entry of the labyrinth.
 <br>
 
 <p align="center">
-  <img src="./images/exit.gif" alt="Exit of the Labyrinth">
+  <img src="./images/exit.gif" alt="Exit of the Labyrinth" width="50%">
 </p>
 
 It represents exit of the labyrinth.
@@ -169,7 +172,7 @@ It represents exit of the labyrinth.
 <br>
 
 <p align="center">
-  <img src="./images/stikerman.gif" alt="Agent in the Labyrinth">
+  <img src="./images/stikerman.gif" alt="Agent in the Labyrinth" width="50%">
 </p>
 
 It represents agent in the labyrinth.
@@ -177,8 +180,9 @@ It represents agent in the labyrinth.
 <br>
 
 <p align="center">
-  <img src="./images/wall-f.gif" alt="Wall of the Labyrinth">
+  <img src="./images/wall-f.gif" alt="Wall of the Labyrinth" width="50%">
 </p>
+
 
 It represents the wall of the labyrinth.
 
