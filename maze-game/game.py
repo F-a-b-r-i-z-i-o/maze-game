@@ -14,8 +14,8 @@ wn.setup(700, 700)
 class Entry(turtle.Turtle):
     def __init__(self):
         turtle.Turtle.__init__(self)
-        wn.addshape('images/entry1.gif')
-        self.shape("images/entry1.gif")
+        wn.addshape('../images/entry1.gif')
+        self.shape("../images/entry1.gif")
         self.penup()
         self.speed(0)
 
@@ -25,8 +25,8 @@ class Entry(turtle.Turtle):
 class Wall(turtle.Turtle):
     def __init__(self):
         turtle.Turtle.__init__(self)
-        wn.addshape('images/wall-f.gif')
-        self.shape('images/wall-f.gif')
+        wn.addshape('../images/wall-f.gif')
+        self.shape('../images/wall-f.gif')
         self.penup()
         self.speed(0)
 
@@ -37,8 +37,8 @@ class Player(turtle.Turtle):
     def __init__(self, walls):
         turtle.Turtle.__init__(self)
         self.walls = walls
-        wn.addshape('images/stikerman.gif')
-        self.shape('images/stikerman.gif')
+        wn.addshape('../images/stikerman.gif')
+        self.shape('../images/stikerman.gif')
         self.penup()
         self.speed(0)
 
@@ -84,8 +84,8 @@ class Player(turtle.Turtle):
 class Exit(turtle.Turtle):
     def __init__(self):
         turtle.Turtle.__init__(self)
-        wn.addshape('images/exit.gif')
-        self.shape('images/exit.gif')
+        wn.addshape('../images/exit.gif')
+        self.shape('../images/exit.gif')
         self.penup()
         self.speed(0)
 
