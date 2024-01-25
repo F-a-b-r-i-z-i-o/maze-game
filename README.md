@@ -155,36 +155,36 @@ This type of implementation is shown on the screen a turtle window with inside a
 
 <br>
 
-<p align="center">
-  <img src="./images/entry1.gif" alt="Entry of the Labyrinth" width="50%">
-</p>
-
 It represents entry of the labyrinth.
 
-<br>
-
 <p align="center">
-  <img src="./images/exit.gif" alt="Exit of the Labyrinth" width="50%">
+  <img src="./images/entry1.gif" alt="Entry of the Labyrinth" width="30%">
 </p>
+
+<br>
 
 It represents exit of the labyrinth.
 
-<br>
-
 <p align="center">
-  <img src="./images/stikerman.gif" alt="Agent in the Labyrinth" width="50%">
+  <img src="./images/exit.gif" alt="Exit of the Labyrinth" width="30%">
 </p>
+
+<br>
 
 It represents agent in the labyrinth.
 
-<br>
-
 <p align="center">
-  <img src="./images/wall-f.gif" alt="Wall of the Labyrinth" width="50%">
+  <img src="./images/stikerman.gif" alt="Agent in the Labyrinth" width="30%">
 </p>
 
+<br>
 
 It represents the wall of the labyrinth.
+
+<p align="center">
+  <img src="./images/wall-f.gif" alt="Wall of the Labyrinth" width="30%">
+</p>
+
 
 ---
 
