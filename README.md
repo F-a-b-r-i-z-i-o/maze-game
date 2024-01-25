@@ -158,7 +158,7 @@ This type of implementation is shown on the screen a turtle window with inside a
 It represents entry of the labyrinth.
 
 <p align="center">
-  <img src="./images/entry1.gif" alt="Entry of the Labyrinth" width="30%">
+  <img src="./images/entry1.gif" alt="Entry of the Labyrinth" width="10%">
 </p>
 
 <br>
@@ -166,7 +166,7 @@ It represents entry of the labyrinth.
 It represents exit of the labyrinth.
 
 <p align="center">
-  <img src="./images/exit.gif" alt="Exit of the Labyrinth" width="30%">
+  <img src="./images/exit.gif" alt="Exit of the Labyrinth" width="10%">
 </p>
 
 <br>
@@ -174,7 +174,7 @@ It represents exit of the labyrinth.
 It represents agent in the labyrinth.
 
 <p align="center">
-  <img src="./images/stikerman.gif" alt="Agent in the Labyrinth" width="30%">
+  <img src="./images/stikerman.gif" alt="Agent in the Labyrinth" width="10%">
 </p>
 
 <br>
@@ -182,7 +182,7 @@ It represents agent in the labyrinth.
 It represents the wall of the labyrinth.
 
 <p align="center">
-  <img src="./images/wall-f.gif" alt="Wall of the Labyrinth" width="30%">
+  <img src="./images/wall-f.gif" alt="Wall of the Labyrinth" width="10%">
 </p>
 
 
