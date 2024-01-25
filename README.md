@@ -146,29 +146,39 @@ This type of implementation is shown on the screen a turtle window with inside a
 
 <br>
 
-![grafica](./screen-project/grafica.png)
+<p align="center">
+  <img src="./screen-project/grafica.png" alt="Graphics Representation">
+</p>
 
 <br>
 
-![entry](./images/entry1.gif)
+<p align="center">
+  <img src="./images/entry1.gif" alt="Entry of the Labyrinth">
+</p>
 
 It represents entry of the labyrinth.
 
 <br>
 
-![exit](./images/exit.gif)
+<p align="center">
+  <img src="./images/exit.gif" alt="Exit of the Labyrinth">
+</p>
 
 It represents exit of the labyrinth.
 
 <br>
 
-![agent](./images/stikerman.gif)
+<p align="center">
+  <img src="./images/stikerman.gif" alt="Agent in the Labyrinth">
+</p>
 
 It represents agent in the labyrinth.
 
 <br>
 
-![exit](./images/wall-f.gif)
+<p align="center">
+  <img src="./images/wall-f.gif" alt="Wall of the Labyrinth">
+</p>
 
 It represents the wall of the labyrinth.
 
